@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- LECHCODE Enthüllungsseite (persönlich) · Anna Sonntag · 02.07.2026 -->
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<title>Eine kleine Welt für dich, Anna</title>
+<meta name="description" content="Ein erster Blick auf deine kleine mystische Website — gestaltet aus deiner Sprachnachricht, deinem Moodboard und deinen Fotos. Von Lenny & Michael (Lechcode, Landsberg).">
+<meta property="og:title" content="Eine kleine Welt für dich, Anna 🌙">
+<meta property="og:description" content="Deine Website — als erster Entwurf. Aus deinem Moodboard, deinen Worten und deinen Fotos. Von Lenny & Michael aus Landsberg.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://lechcode.github.io/anna-sonntag-vorschau/assets/portrait-anna-900.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='47' fill='%2317110a'/%3E%3Cpath d='M62 27a26 26 0 1 0 0 46 22 22 0 0 1 0-46z' fill='%23c9ac74'/%3E%3Ccircle cx='33' cy='33' r='2' fill='%23c9ac74'/%3E%3Ccircle cx='30' cy='63' r='1.4' fill='%23c9ac74'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/karla-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{
+  --bark-deep:#17110a;--bark:#241a10;--gold:#c9ac74;--amber:#dca469;
+  --clay:#b5764f;--clay-ink:#854b29;
+  --paper:#ece1c9;--paper-light:#f4ebd7;--paper-deep:#e2d3b6;
+  --ink:#251d12;--ink-soft:#5c5140;
+  --serif:'Fraunces','Fraunces Fallback',Georgia,serif;--sans:'Karla','Karla Fallback',Arial,sans-serif;
+  --s2:clamp(20px,2.4vw,28px);--s3:clamp(30px,3.8vw,44px);--s4:clamp(48px,6.5vw,84px);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper-light);color:var(--ink);font-family:var(--sans);font-size:clamp(16px,.4vw + 15px,17.5px);line-height:1.68;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.14;letter-spacing:-.015em;text-wrap:balance}
+h1 em,h2 em{font-style:italic;color:var(--clay-ink)}
+p{max-width:64ch}
+a{color:var(--clay-ink)}
+img{display:block;max-width:100%;height:auto}
+.wrap{width:min(920px,92vw);margin-inline:auto;position:relative;z-index:2}
+section{padding:var(--s4) 0}
+.eyebrow{font-weight:700;font-size:13.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--clay-ink);display:inline-flex;align-items:center;gap:9px}
+.eyebrow::before{content:"";width:24px;height:1px;background:currentColor;opacity:.8}
+h2{font-size:clamp(25px,2.1vw + 19px,36px);margin-top:16px}
+.lead{color:var(--ink-soft);font-size:clamp(18px,.65vw + 16.3px,20.5px);line-height:1.75;margin-top:var(--s2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--clay);color:#fbf3e6;text-decoration:none;font-weight:700;font-size:17px;padding:16px 30px;border-radius:999px;min-height:48px;box-shadow:0 20px 40px -20px rgba(181,118,79,.7);transition:transform .25s var(--ease),background .25s}
+.btn:hover{background:var(--clay-ink);transform:translateY(-2px)}
+
+/* hero */
+.hero{padding-top:clamp(56px,9vh,104px);text-align:center}
+.hero .wrap{max-width:760px}
+.moon-deko{width:76px;height:76px;margin:0 auto var(--s2);color:var(--clay-ink)}
+.hero h1{font-size:clamp(32px,4.6vw + 16px,58px)}
+.hero .lead{margin-inline:auto}
+.hinweis{margin-top:var(--s2);font-size:14.5px;color:var(--ink-soft)}
+
+/* photo band */
+.showpic{border-block:1px solid rgba(154,90,52,.18);background:var(--bark-deep)}
+.showpic .frame{border-radius:14px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.8);border:1px solid rgba(201,172,116,.25);max-width:520px;margin-inline:auto}
+.showpic img{width:100%}
+
+/* content cards */
+.card-band{background:var(--paper)}
+.cards{display:grid;gap:16px;margin-top:var(--s3)}
+@media(min-width:720px){.cards{grid-template-columns:1fr 1fr}}
+.card{background:var(--paper-light);border:1px solid rgba(154,90,52,.2);border-radius:14px;padding:var(--s2)}
+.card h3{font-size:var(--s2)}
+.card p{color:var(--ink-soft);font-size:15.5px;margin-top:8px}
+.cta-mitte{text-align:center;background:linear-gradient(180deg,var(--paper-light),var(--paper-deep))}
+.cta-mitte p{margin:var(--s2) auto 0;color:var(--ink-soft)}
+
+/* brauchen */
+.brauchen ul{list-style:none;display:grid;gap:14px;margin-top:var(--s3)}
+.brauchen li{display:flex;gap:13px;background:var(--paper-light);border:1px solid rgba(154,90,52,.2);border-radius:14px;padding:var(--s2);color:var(--ink-soft)}
+.brauchen li b{color:var(--ink)}
+.brauchen svg{width:24px;height:24px;flex:none;margin-top:2px;color:var(--clay-ink)}
+
+/* lcbook */
+.lcbook{background:radial-gradient(58vmax 42vmax at 82% -12%,rgba(220,164,105,.22),transparent 60%),radial-gradient(46vmax 40vmax at 6% 120%,rgba(201,172,116,.12),transparent 56%),linear-gradient(180deg,#1d1810,#16130c);color:#f4ecdc;text-align:center;padding:clamp(54px,8vw,94px) clamp(20px,5vw,32px)}
+.lcbook-in{width:min(600px,100%);margin-inline:auto}
+.lcbook-eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#e7b964;margin-bottom:16px}
+.lcbook-mark{width:30px;height:30px;flex:none;filter:drop-shadow(0 0 5px rgba(220,164,105,.45))}
+.lcbook-h{font-family:var(--serif);font-weight:600;font-size:clamp(27px,4vw,42px);line-height:1.14;letter-spacing:-.015em;color:#fbf5e8;margin:0}
+.lcbook-p{font-family:var(--sans);font-size:clamp(15px,.5vw + 14px,17px);line-height:1.66;color:#cfc3ac;max-width:50ch;margin:16px auto 0}
+.lcbook-btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;margin-top:30px;text-decoration:none;cursor:pointer;border:0;background:linear-gradient(180deg,#f0a85e,#e8923f);color:#2a1808;font-family:var(--sans);font-weight:700;font-size:16.5px;padding:16px 32px;border-radius:999px;min-height:52px;box-shadow:inset 0 1px 0 rgba(255,220,170,.55),0 16px 30px -12px rgba(232,146,63,.6);transition:transform .26s var(--ease),box-shadow .26s}
+.lcbook-btn:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,220,170,.55),0 22px 40px -14px rgba(232,146,63,.72)}
+.lcbook-btn svg{width:20px;height:20px;flex:none}
+.lcbook-arr{transition:transform .25s var(--ease)}
+.lcbook-btn:hover .lcbook-arr{transform:translateX(4px)}
+.lcbook-note{font-family:var(--sans);font-size:12.5px;line-height:1.55;color:#9a8e76;max-width:46ch;margin:18px auto 0}
+
+.site-footer{background:var(--bark-deep);color:#cfc3ac;padding:var(--s3) 0;text-align:center;font-size:14.5px}
+.site-footer a{color:var(--gold);font-weight:700}
+.site-footer .fein{margin-top:10px;font-size:13px;color:#9a8e76;max-width:60ch;margin-inline:auto}
+
+.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.btn,.lcbook-btn{transition:none}}
+@media(max-width:720px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- 1 · Persönliche Begrüßung -->
+<section class="hero">
+  <div class="wrap">
+    <svg class="moon-deko" viewBox="0 0 76 76" fill="none" aria-hidden="true"><circle cx="38" cy="38" r="33" stroke="currentColor" stroke-width="1.3" opacity=".4"/><path d="M46 20a19 19 0 1 0 0 36 16 16 0 0 1 0-36z" fill="currentColor"/><circle cx="22" cy="24" r="1.6" fill="currentColor"/><circle cx="19" cy="50" r="1.2" fill="currentColor"/></svg>
+    <p class="eyebrow" style="justify-content:center">Eine kleine Überraschung aus Landsberg</p>
+    <h1>Hallo Anna —<br><em>hier ist deine kleine Welt.</em></h1>
+    <p class="lead">Wir sind Lenny &amp; Michael von Lechcode. Nach deiner Sprachnachricht, deinem Moodboard und deinen wunderschönen Waldbildern konnten wir nicht anders — wir haben einfach mal losgelegt und einen ersten Entwurf deiner Website gebaut. Kein fertiges Werk, sondern ein Anfang zum Anschauen und Weiterträumen. Alles daran darfst du noch verändern.</p>
+    <p class="hinweis">Diese Seite ist privat: nicht bei Google auffindbar, nur über deinen Link erreichbar.</p>
+  </div>
+</section>
+
+<!-- 2 · Bild -->
+<section class="showpic">
+  <div class="wrap">
+    <div class="frame reveal">
+      <img src="assets/portrait-anna-900.jpg" alt="Anna Sonntag im Wald mit Räucherschale" width="900" height="1200" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Was du hier findest -->
+<section class="card-band">
+  <div class="wrap">
+    <p class="eyebrow">Was schon da ist</p>
+    <h2>Ein erster Rundgang durch <em>deine Seite</em></h2>
+    <div class="cards">
+      <div class="card reveal"><h3>Deine Bühne</h3><p>Ein ruhiger, mystischer Auftakt mit deinem Kernsatz: „Alles, was du brauchst, trägst du längst in dir.“ — deine Fotos tragen die ganze Stimmung.</p></div>
+      <div class="card reveal"><h3>Über dich</h3><p>Ein warmer erster Textentwurf über deinen Weg und deine Mission. Alles nur ein Vorschlag — du erzählst es am Ende mit deinen eigenen Worten.</p></div>
+      <div class="card reveal"><h3>Deine Werkzeuge</h3><p>Astrologie, mediale Arbeit &amp; Tarot — liebevoll als kleine „Tarotkarten“ gestaltet, ganz im Geist deines Moodboards.</p></div>
+      <div class="card reveal"><h3>Impuls-Session &amp; mehr</h3><p>Ein klares Angebot, ein sanfter Ablauf in drei Schritten und ein Platz für deine große Vision: die Online-Bibliothek.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Button zur Seite -->
+<section class="cta-mitte">
+  <div class="wrap">
+    <h2>Genug erzählt — <em>schau sie dir an.</em></h2>
+    <p style="margin-bottom:var(--s3)">Am schönsten direkt auf dem Handy. Alle Texte sind Vorschläge, alle Bilder deine eigenen — nichts ist in Stein gemeißelt.</p>
+    <a class="btn" href="index.html">Deine neue Seite ansehen</a>
+  </div>
+</section>
+
+<!-- 5 · Was wir noch brauchen -->
+<section class="brauchen">
+  <div class="wrap">
+    <p class="eyebrow">Damit sie ganz deine wird</p>
+    <h2>Was wir noch <em>von dir bräuchten</em></h2>
+    <ul>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h9l4 4v14H6Z"/><path d="M14 3v5h5"/></svg><span><b>Deine Texte &amp; dein Moodboard als Datei:</b> deine eigene Geschichte für „Über mich“ und gern das Moodboard als Bild — damit wir Farben und Stimmung noch genauer treffen.</span></li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="11" r="2"/><path d="m5 19 5-5 3 3 4-4 2 2"/></svg><span><b>Ein Okay zu den Fotos &amp; ggf. weitere Bilder:</b> Wir haben deine iPhone-Waldbilder eingesetzt — sie sind traumhaft. Sag uns kurz, ob alles von dir ist bzw. du die Rechte hast, und schick gern weitere, wenn du magst.</span></li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span><b>Ein paar Klärungen:</b> deine Angebote &amp; Ablauf im Detail, Kontaktwege, und was dir bei der Online-Bibliothek und dem Blog vorschwebt — das besprechen wir am besten im Gespräch mit Michi.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6 · Kennenlernen -->
+<section class="lcbook" aria-labelledby="lcbook-h">
+  <div class="lcbook-in">
+    <span class="lcbook-eyebrow">
+      <svg class="lcbook-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M40 12a26 26 0 1 0 0 40 22 22 0 0 1 0-40z" fill="#e7b964"/><circle cx="20" cy="18" r="2" fill="#e8923f"/><circle cx="17" cy="30" r="1.4" fill="#e8923f"/></svg>
+      Lechcode · Landsberg am Lech
+    </span>
+    <h2 class="lcbook-h" id="lcbook-h">Lust auf ein kurzes Gespräch, Anna?</h2>
+    <p class="lcbook-p">Such dir einfach einen Moment aus — etwa 30 Minuten, ganz unverbindlich. Wir gehen gemeinsam durch die Seite, klären die offenen Punkte und du entscheidest in aller Ruhe, wie es weitergeht.</p>
+    <a class="lcbook-btn" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1vusFYCV6O45i109a0J5ruEFtWCT7iFsq5t4Mb2KvQmNhdkMtlddml9dx5V2jButjV2SUGapFg?gv=true" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="3" stroke="#2a1808" stroke-width="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4" stroke="#2a1808" stroke-width="2" stroke-linecap="round"/></svg>
+      Termin aussuchen
+      <span class="lcbook-arr" aria-hidden="true">→</span>
+    </a>
+    <p class="lcbook-note">Öffnet unseren Kalender in einem neuen Tab — du suchst dir einfach einen freien Termin aus. Diese Seite bleibt komplett cookiefrei.</p>
+  </div>
+</section>
+
+<!-- 7 · Footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p><b>Mit viel Freude gebaut von Lenny &amp; Michael</b> — Lechcode, Landsberg am Lech.</p>
+    <p style="margin-top:8px">Fragen, Wünsche, oder einfach mal reden? <a href="mailto:info@lechcode.de">info@lechcode.de</a></p>
+    <p class="fein">Diese Vorschau ist nicht öffentlich beworben und für Suchmaschinen gesperrt. Sie nutzt ausschließlich deine eigenen Informationen und Bilder — und wird auf deinen Wunsch selbstverständlich sofort gelöscht. Keine Cookies, kein Tracking.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+  if(reduce.matches||!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in');});}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.1});els.forEach(function(el){io.observe(el);});}
+})();
+</script>
+</body>
+</html>
