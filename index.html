@@ -218,8 +218,10 @@ section{padding:clamp(68px,9vw,132px) 0;position:relative}
 .tarot-foot{color:var(--gold);font-size:.9rem;margin-top:.2rem}
 
 /* ===== gallery ===== */
-.gallery{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:760px){.gallery{grid-template-columns:repeat(3,1fr)}}
+.gallery{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+/* mobile mosaic: one full-width feature, two beneath — kein 2+1-Waisenbild */
+.gallery figure:first-child{grid-column:1 / -1;aspect-ratio:4/5}
+@media(min-width:760px){.gallery{gap:16px;grid-template-columns:repeat(3,1fr)}.gallery figure:first-child{grid-column:auto;aspect-ratio:3/4}}
 .gallery figure{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;box-shadow:0 26px 50px -34px rgba(0,0,0,.8)}
 .gallery figure::after{content:"";position:absolute;inset:0;border:1px solid rgba(201,172,116,.22);border-radius:var(--radius);pointer-events:none}
 .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
@@ -251,13 +253,26 @@ section{padding:clamp(68px,9vw,132px) 0;position:relative}
 .offer-card.soft .offer-list li::before{content:"✦";position:absolute;left:0;color:var(--clay-ink);font-size:.8em}
 
 /* ===== stimmen ===== */
-.voices{display:grid;gap:1.4rem}
+.stimmen{position:relative;overflow:hidden}
+.stimmen::before{content:"";position:absolute;top:-8%;left:50%;transform:translateX(-50%);width:min(94%,760px);aspect-ratio:2.4/1;background:radial-gradient(ellipse at center, rgba(220,164,105,.16), transparent 68%);pointer-events:none}
+.voices{display:grid;gap:1.6rem;position:relative;z-index:2}
 @media(min-width:760px){.voices{grid-template-columns:repeat(2,1fr)}}
-.voice{background:var(--paper-light);border:1px solid rgba(154,90,52,.2);border-radius:var(--radius);padding:2rem 1.9rem;position:relative}
-.voice .qm{font-family:var(--serif);font-style:italic;font-size:2.4rem;color:var(--gold);line-height:.6;display:block;margin-bottom:.4rem}
-.voice p{font-family:var(--serif);font-style:italic;font-size:1.12rem;color:var(--bark);line-height:1.45;margin:0 0 1rem}
-.voice cite{font-style:normal;font-size:.85rem;font-weight:700;letter-spacing:.04em;color:var(--clay-ink)}
-.voice-note{margin-top:1.8rem;font-size:.9rem;color:var(--ink-soft);text-align:center}
+.voice{
+  position:relative;margin:0;display:flex;flex-direction:column;
+  background:linear-gradient(180deg,var(--paper-light),var(--paper));
+  border:1px solid rgba(201,172,116,.4);border-radius:12px;
+  padding:2.6rem 2rem 1.7rem;
+  box-shadow:0 30px 56px -34px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.35);
+}
+.voice::before{content:"“";position:absolute;top:.35rem;left:1.4rem;font-family:var(--serif);font-weight:600;font-size:4.4rem;line-height:1;color:var(--gold);opacity:.55}
+.voice blockquote{margin:1.1rem 0 0;font-family:var(--serif);font-style:italic;font-size:clamp(1.12rem,.5vw + 1rem,1.28rem);color:var(--bark);line-height:1.5}
+.voice-by{display:flex;align-items:center;gap:.9rem;margin-top:1.7rem;padding-top:1.3rem;border-top:1px solid rgba(154,90,52,.22)}
+.voice-seal{width:44px;height:44px;flex:none;border-radius:50%;border:1px solid var(--gold);color:var(--clay-ink);display:flex;align-items:center;justify-content:center;background:rgba(201,172,116,.14)}
+.voice-who{display:flex;flex-direction:column;gap:.1rem;line-height:1.3}
+.voice-who b{font-size:.95rem;color:var(--bark)}
+.voice-who small{font-size:.8rem;color:var(--clay-ink);letter-spacing:.02em}
+.voice-note{margin-top:2.2rem;font-size:.86rem;color:var(--clay-ink);text-align:center;display:flex;align-items:center;justify-content:center;gap:.6em}
+.voice-note::before,.voice-note::after{content:"";height:1px;width:34px;background:var(--gold);opacity:.5}
 
 /* ===== blog ===== */
 .blog-card{display:grid;gap:1.6rem;align-items:center;border:1px solid rgba(201,172,116,.3);border-radius:var(--radius);padding:clamp(1.8rem,3vw,2.8rem);background:rgba(236,225,201,.06)}
@@ -555,25 +570,29 @@ footer a:hover{opacity:1;color:var(--gold)}
   </div>
 </section>
 
-<section class="paperlight-bg" style="padding-top:clamp(56px,8vw,104px)">
+<section class="stimmen" style="background:var(--paper-deep);padding-top:clamp(56px,8vw,104px)">
   <div class="wrap reveal">
     <div class="section-head">
       <p class="eyebrow">Stimmen</p>
       <h2>Was Menschen aus der Begleitung mitnehmen</h2>
     </div>
     <div class="voices">
-      <blockquote class="voice">
-        <span class="qm" aria-hidden="true">„</span>
-        <p>Anna hat mir geholfen, wieder Vertrauen in meine eigene Kraft zu finden. Ich bin ruhiger und klarer aus unserer Session gegangen, als ich gekommen bin.</p>
-        <cite>— Platzhalter · echte Stimme folgt</cite>
-      </blockquote>
-      <blockquote class="voice">
-        <span class="qm" aria-hidden="true">„</span>
-        <p>Es war kein Vorhersagen, sondern ein Erinnern. Ich habe gespürt, dass ich vieles längst in mir trage — ich hatte es nur vergessen.</p>
-        <cite>— Platzhalter · echte Stimme folgt</cite>
-      </blockquote>
+      <figure class="voice">
+        <blockquote>Anna hat mir geholfen, wieder Vertrauen in meine eigene Kraft zu finden. Ich bin ruhiger und klarer aus unserer Session gegangen, als ich gekommen bin.</blockquote>
+        <figcaption class="voice-by">
+          <span class="voice-seal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 3a9 9 0 1 0 0 18 7 7 0 0 1 0-18z" fill="currentColor"/></svg></span>
+          <span class="voice-who"><b>Name folgt</b><small>Aus einer Begleitung</small></span>
+        </figcaption>
+      </figure>
+      <figure class="voice">
+        <blockquote>Es war kein Vorhersagen, sondern ein Erinnern. Ich habe gespürt, dass ich vieles längst in mir trage — ich hatte es nur vergessen.</blockquote>
+        <figcaption class="voice-by">
+          <span class="voice-seal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z" fill="currentColor"/></svg></span>
+          <span class="voice-who"><b>Name folgt</b><small>Aus einer Begleitung</small></span>
+        </figcaption>
+      </figure>
     </div>
-    <p class="voice-note">Hier erscheinen echte Stimmen deiner Klient:innen, sobald die ersten Begleitungen abgeschlossen sind.</p>
+    <p class="voice-note">Echte Stimmen folgen, sobald die ersten Begleitungen abgeschlossen sind</p>
   </div>
 </section>
 
