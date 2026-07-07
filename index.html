@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add('js')</script>
 <title>Anna Sonntag — Kosmische & naturverbundene Wegbegleitung</title>
-<meta name="description" content="Anna Sonntag begleitet dich mit Astrologie, medialer Arbeit und Tarot dabei, deine eigenen Ressourcen zu stärken — damit du herausfordernden Zeiten in Würde begegnest.">
+<meta name="description" content="Anna Sonntag begleitet dich mit Astrologie, Tarot und Ritualarbeit dabei, deine eigenen Ressourcen zu stärken — damit du herausfordernden Zeiten in Würde begegnest.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:title" content="Anna Sonntag — Kosmische & naturverbundene Wegbegleitung">
-<meta property="og:description" content="Alles, was du brauchst, trägst du längst in dir. Sanfte Begleitung mit Astrologie, medialer Arbeit und Tarot.">
+<meta property="og:description" content="Alles, was du brauchst, trägst du längst in dir. Sanfte Begleitung mit Astrologie, Tarot und Ritualarbeit.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="https://lechcode.github.io/anna-sonntag-vorschau/">
@@ -311,6 +311,27 @@ footer a:hover{opacity:1;color:var(--gold)}
 .footer-links{display:flex;gap:1.6rem;flex-wrap:wrap;list-style:none;padding:0;margin:0;font-size:.95rem}
 .footer-fine{margin-top:2.2rem;font-size:.8rem;opacity:.55;max-width:52ch}
 
+/* ===== brand mark — her real logo as a warm espresso "coin" (gold reads on light nav) ===== */
+.brand-mark{width:38px;height:38px;border-radius:50%;flex:none;display:inline-flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%, #2d2113 0%, #171009 100%);box-shadow:inset 0 0 0 1px rgba(201,172,116,.4), 0 5px 14px -8px rgba(23,17,10,.7)}
+.brand-mark img{width:27px;height:27px;object-fit:contain}
+.footer-mark{width:42px;height:42px;object-fit:contain;flex:none}
+
+/* ===== contact form — Erstgespräch mit kosmischen Koordinaten ===== */
+.form-card{background:linear-gradient(180deg,var(--paper-light),var(--paper));border:1px solid rgba(201,172,116,.4);border-radius:14px;padding:clamp(1.5rem,3vw,2.3rem);box-shadow:0 30px 60px -42px rgba(23,17,10,.6)}
+.birth-panel{margin:.3rem 0 1.3rem;padding:1.3rem 1.3rem 1.45rem;border:1px dashed rgba(154,90,52,.4);border-radius:12px;background:rgba(201,172,116,.09);position:relative;overflow:hidden}
+.birth-panel::before{content:"";position:absolute;top:-34px;right:-28px;width:130px;height:130px;background:radial-gradient(circle, rgba(220,164,105,.22), transparent 70%);pointer-events:none}
+.birth-head{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem .6rem;margin-bottom:.4rem;position:relative}
+.bh-title{display:inline-flex;align-items:center;gap:.55rem}
+.birth-head svg{width:22px;height:22px;color:var(--clay-ink);flex:none}
+.birth-head b{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--bark);line-height:1.2}
+.birth-head .opt{margin-left:auto;font-size:.63rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--clay-ink);background:rgba(154,90,52,.14);padding:.3em .75em;border-radius:999px}
+.birth-hint{font-size:.87rem;color:var(--ink-soft);margin:.1rem 0 1rem;line-height:1.55;max-width:46ch;position:relative}
+.birth-grid{display:grid;gap:.9rem;position:relative}
+@media(min-width:480px){.birth-grid{grid-template-columns:1fr 1fr}.birth-grid .full{grid-column:1 / -1}}
+.field .hint{font-weight:400;color:var(--ink-soft);font-size:.82rem}
+.contact-aside{font-size:.86rem;color:var(--ink-soft);display:flex;align-items:flex-start;gap:.6em;margin-top:1.6rem}
+.contact-aside svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--clay-ink)}
+
 /* reveal animation */
 .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease, transform .8s ease}
 .js .reveal.is-visible{opacity:1;transform:none}
@@ -322,7 +343,7 @@ footer a:hover{opacity:1;color:var(--gold)}
 <nav class="nav">
   <div class="wrap">
     <a href="#top" class="brand" aria-label="Anna Sonntag — Startseite">
-      <svg width="30" height="30" viewBox="0 0 200 200" fill="none" style="color:var(--clay-ink)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="100" cy="100" r="87" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.85"/><line x1="100.0" y1="60.0" x2="100.0" y2="38.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="112.4" y1="62.0" x2="119.2" y2="41.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="123.5" y1="67.6" x2="136.4" y2="49.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="132.4" y1="76.5" x2="150.2" y2="63.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="138.0" y1="87.6" x2="159.0" y2="80.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="140.0" y1="100.0" x2="162.0" y2="100.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="138.0" y1="112.4" x2="159.0" y2="119.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="132.4" y1="123.5" x2="150.2" y2="136.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="123.5" y1="132.4" x2="136.4" y2="150.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="112.4" y1="138.0" x2="119.2" y2="159.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="100.0" y1="140.0" x2="100.0" y2="162.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="87.6" y1="138.0" x2="80.8" y2="159.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="76.5" y1="132.4" x2="63.6" y2="150.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="67.6" y1="123.5" x2="49.8" y2="136.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="62.0" y1="112.4" x2="41.0" y2="119.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="60.0" y1="100.0" x2="38.0" y2="100.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="62.0" y1="87.6" x2="41.0" y2="80.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="67.6" y1="76.5" x2="49.8" y2="63.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="76.5" y1="67.6" x2="63.6" y2="49.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="87.6" y1="62.0" x2="80.8" y2="41.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g transform="rotate(-18 100 100)"><mask id="emNav"><rect width="200" height="200" fill="black"/><circle cx="100" cy="100" r="33" fill="white"/><circle cx="112" cy="96" r="29" fill="black"/></mask><circle cx="100" cy="100" r="33" fill="currentColor" mask="url(#emNav)"/></g><polygon points="100.0,13.0 99.0,10.0 96.0,9.0 99.0,8.0 100.0,5.0 101.0,8.0 104.0,9.0 101.0,10.0" fill="currentColor"/><polygon points="9.0,104.0 8.0,101.0 5.0,100.0 8.0,99.0 9.0,96.0 10.0,99.0 13.0,100.0 10.0,101.0" fill="currentColor"/><polygon points="191.0,104.0 190.0,101.0 187.0,100.0 190.0,99.0 191.0,96.0 192.0,99.0 195.0,100.0 192.0,101.0" fill="currentColor"/></svg>
+      <span class="brand-mark" aria-hidden="true"><img src="assets/logo-anna-gold.png" width="27" height="27" alt=""></span>
       Anna Sonntag
     </a>
     <ul class="nav-links" id="navLinks">
@@ -332,7 +353,7 @@ footer a:hover{opacity:1;color:var(--gold)}
       <li><a href="#angebote">Angebote</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
-    <a href="#kontakt" class="btn btn-primary nav-cta">Impuls-Session anfragen</a>
+    <a href="#kontakt" class="btn btn-primary nav-cta">Erstgespräch anfragen</a>
     <button class="burger" id="burgerBtn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
@@ -343,7 +364,7 @@ footer a:hover{opacity:1;color:var(--gold)}
   <div class="hero-media">
     <picture>
       <source type="image/webp" srcset="assets/portrait-anna-480.webp 480w, assets/portrait-anna-900.webp 900w" sizes="(min-width:900px) 50vw, 100vw">
-      <img src="assets/portrait-anna-900.jpg" srcset="assets/portrait-anna-480.jpg 480w, assets/portrait-anna-900.jpg 900w" sizes="(min-width:900px) 50vw, 100vw" fetchpriority="high" alt="Anna Sonntag in einem sonnendurchfluteten Wald, sie hält eine Räucherschale, warmer Rauch zieht durch das goldene Licht">
+      <img src="assets/portrait-anna-900.jpg" srcset="assets/portrait-anna-480.jpg 480w, assets/portrait-anna-900.jpg 900w" sizes="(min-width:900px) 50vw, 100vw" width="900" height="1202" fetchpriority="high" alt="Anna Sonntag in einem sonnendurchfluteten Wald, sie hält eine Räucherschale, warmer Rauch zieht durch das goldene Licht">
     </picture>
   </div>
   <div class="hero-panel">
@@ -351,12 +372,12 @@ footer a:hover{opacity:1;color:var(--gold)}
       <div class="hero-inner">
         <p class="eyebrow on-dark">Kosmische &amp; naturverbundene Wegbegleitung</p>
         <h1>Alles, was du brauchst, trägst du <span class="accent">längst in dir.</span></h1>
-        <p class="lede">Ich begleite dich mit Astrologie, medialer Arbeit und Tarot zurück zu deinen eigenen Ressourcen — damit du auch herausfordernden Zeiten in deiner vollen Würde begegnest.</p>
+        <p class="lede">Ich öffne mit dir Transformationsräume — ganz auf dich und deine Signatur angepasst. Mit Astrologie, Tarot und Ritualarbeit findest du zurück zu deinen eigenen Ressourcen und begegnest auch schweren Zeiten in deiner vollen Würde.</p>
         <div class="hero-ctas">
-          <a href="#kontakt" class="btn btn-primary">Impuls-Session anfragen <span class="arw">→</span></a>
-          <a href="#ueber-mich" class="btn btn-ghost on-dark">Meine Geschichte</a>
+          <a href="#kontakt" class="btn btn-primary">Erstgespräch anfragen <span class="arw">→</span></a>
+          <a href="#ueber-mich" class="btn btn-ghost on-dark">Mein Weg</a>
         </div>
-        <p class="hero-meta">Astrologie <span></span> Mediale Arbeit <span></span> Tarot</p>
+        <p class="hero-meta">Astrologie <span></span> Ritualarbeit <span></span> Tarot</p>
       </div>
     </div>
   </div>
@@ -381,15 +402,16 @@ footer a:hover{opacity:1;color:var(--gold)}
     <div class="about-photo">
       <picture>
         <source type="image/webp" srcset="assets/wildblumen-480.webp 480w, assets/wildblumen-900.webp 900w" sizes="(min-width:880px) 38vw, 90vw">
-        <img src="assets/wildblumen-900.jpg" srcset="assets/wildblumen-480.jpg 480w, assets/wildblumen-900.jpg 900w" sizes="(min-width:880px) 38vw, 90vw" loading="lazy" alt="Anna Sonntag steht zwischen hohen Fingerhut-Blüten im Wald, das Abendlicht liegt warm auf den Bäumen">
+        <img src="assets/wildblumen-900.jpg" srcset="assets/wildblumen-480.jpg 480w, assets/wildblumen-900.jpg 900w" sizes="(min-width:880px) 38vw, 90vw" width="900" height="1133" loading="lazy" alt="Anna Sonntag steht zwischen hohen Fingerhut-Blüten im Wald, das Abendlicht liegt warm auf den Bäumen">
       </picture>
     </div>
     <div>
       <p class="eyebrow">Über mich</p>
-      <h2>Mein Blick aufs Leben ist in der Natur gewachsen</h2>
-      <p class="quote-lead">„Ich habe gelernt, dass wir mitten im Schweren aufrecht bleiben können — weil wir alles in uns tragen, was wir dafür brauchen.“</p>
-      <p>Mein Weg begann nicht mit einem Plan, sondern mit einer Erschütterung: der Krankheit meines Vaters. In dieser Zeit habe ich gespürt, wie viel Kraft, Klarheit und Würde selbst dann in uns lebendig bleiben, wenn alles ins Wanken gerät — sobald wir wieder in Kontakt mit ihnen kommen.</p>
-      <p>Heute begleite ich Menschen mit Astrologie, medialer Arbeit und Tarot dabei, genau diese inneren Ressourcen wiederzufinden. Es ist eine Herzenssache für mich: Ich möchte, dass du erlebst, wie viel Tragfähigkeit schon in dir angelegt ist — ganz individuell auf deine eigene Seelensignatur bezogen.</p>
+      <h2>Diese Arbeit ist aus meinem eigenen Weg gewachsen</h2>
+      <p class="quote-lead">„Die größte Kraft wartet oft genau dort, wo wir beginnen, uns selbst mit offenem Herzen zu begegnen.“</p>
+      <p>Ich glaube daran, dass jeder Mensch die Fähigkeit in sich trägt, sich immer wieder neu mit seiner eigenen Kraft zu verbinden. Diese Überzeugung ist nicht nur aus meinem Wissen entstanden, sondern aus meinem eigenen Lebensweg.</p>
+      <p>Zeiten der Unsicherheit, des Verlustes und tiefgreifender Veränderungen haben mich eingeladen, mich selbst neu kennenzulernen. Dabei habe ich entdeckt, dass wahre Stärke dort entsteht, wo wir uns selbst ehrlich begegnen — und aus dieser Begegnung ist eine tiefe Verbindung zu meiner Intuition und meiner Spiritualität gewachsen.</p>
+      <p>Heute verbinde ich fundiertes Wissen aus Ressourcenarbeit, Embodiment und traumasensiblen Prozessen mit Astrologie, Tarot und Ritualarbeit. Für mich sind sie Einladungen zu mehr Selbstverständnis, innerer Orientierung und bewusster Entwicklung — damit du deinen Weg mit mehr Klarheit und Vertrauen gehst.</p>
       <p class="signature">Anna</p>
       <a href="#ablauf" class="btn btn-ghost on-light">So arbeite ich <span class="arw">→</span></a>
     </div>
@@ -423,18 +445,18 @@ footer a:hover{opacity:1;color:var(--gold)}
     <div class="essenz-list">
       <div class="essenz-item">
         <span class="essenz-num">i.</span>
-        <h3>Ressourcen stärken</h3>
-        <p>Du entdeckst neu, wie viel Kraft, Kreativität und Resilienz längst in dir wohnen.</p>
+        <h3>Kapazitäten stärken</h3>
+        <p>Jeder Mensch kann mit dem Leben mitwachsen. Wenn deine innere Kapazität wächst, entsteht mehr Raum für Gefühle, Veränderungen und neue Erfahrungen — und du begegnest Herausforderungen mit Klarheit, Präsenz und innerer Stabilität.</p>
       </div>
       <div class="essenz-item">
         <span class="essenz-num">ii.</span>
-        <h3>Kapazitäten ausweiten</h3>
-        <p>Schritt für Schritt entsteht mehr innerer Raum für das, was das Leben dir bringt.</p>
+        <h3>Ressourcen stärken</h3>
+        <p>In dir liegt längst eine Vielzahl an Ressourcen. Manchmal brauchen sie nur Aufmerksamkeit und eine liebevolle Erinnerung — dann wächst deine Verbindung zu Selbstvertrauen, Intuition, Kreativität und deiner natürlichen Resilienz.</p>
       </div>
       <div class="essenz-item">
         <span class="essenz-num">iii.</span>
-        <h3>In Würde begegnen</h3>
-        <p>Auch schwere Zeiten dürfen sein — du begegnest ihnen aus deiner eigenen Stärke heraus.</p>
+        <h3>Transformationsräume öffnen</h3>
+        <p>Transformation entfaltet sich dort, wo Sicherheit, Vertrauen und Tiefe zusammenkommen. Ich öffne einen Raum, in dem du dir selbst begegnest, Erfahrungen integrierst und neue Perspektiven entstehen lässt.</p>
       </div>
     </div>
   </div>
@@ -444,8 +466,8 @@ footer a:hover{opacity:1;color:var(--gold)}
   <div class="wrap reveal">
     <div class="section-head">
       <p class="eyebrow">Meine Werkzeuge</p>
-      <h2>Alte Sprachen, die dich zu dir zurückführen</h2>
-      <p class="lede">Astrologie, mediale Arbeit und Tarot sind für mich keine Wahrsagerei, sondern Landkarten — sie helfen uns, das zu lesen, was in dir ohnehin schon bereit ist.</p>
+      <h2>Fundiertes Wissen, verwoben mit alten Sprachen</h2>
+      <p class="lede">Ich verbinde fundiertes, körperorientiertes Wissen — aus Ressourcenarbeit, Embodiment und traumasensiblen Prozessen — mit intuitiven Werkzeugen. Sie sind für mich keine Wahrsagerei, sondern Landkarten zu dem, was in dir ohnehin schon bereit ist.</p>
     </div>
     <div class="tarot-grid">
       <article class="tarot">
@@ -457,9 +479,9 @@ footer a:hover{opacity:1;color:var(--gold)}
       </article>
       <article class="tarot">
         <span class="tarot-num">II</span>
-        <span class="tarot-glyph"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12z" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="2.6" fill="currentColor"/></svg></span>
-        <h3>Mediale Arbeit</h3>
-        <p>Ein feines Hinhören auf das, was zwischen den Zeilen deiner Seele liegt — und dich sanft in Kontakt mit deiner eigenen Intuition bringt.</p>
+        <span class="tarot-glyph"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 14h16a8 8 0 0 1-8 6 8 8 0 0 1-8-6z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M12 13c-1.2-1.2-1.2-2.5 0-3.7.9-.9.9-1.9 0-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M15.2 13c1-1 1-2 .2-3" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity=".65"/><path d="M8.8 13c-.8-.9-.8-1.9 0-2.8" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity=".65"/></svg></span>
+        <h3>Ritualarbeit</h3>
+        <p>Ein Raum, ganz auf dich und deinen Moment gestaltet. Rituale verbinden dich wieder mit deiner eigenen Kraft — und verankern Veränderung so, dass sie spürbar bleibt.</p>
         <span class="tarot-foot">✦</span>
       </article>
       <article class="tarot">
@@ -483,19 +505,19 @@ footer a:hover{opacity:1;color:var(--gold)}
       <figure>
         <picture>
           <source type="image/webp" srcset="assets/hero-ritual-480.webp 480w, assets/hero-ritual-900.webp 900w" sizes="(min-width:760px) 33vw, 50vw">
-          <img src="assets/hero-ritual-480.jpg" srcset="assets/hero-ritual-480.jpg 480w, assets/hero-ritual-900.jpg 900w" sizes="(min-width:760px) 33vw, 50vw" loading="lazy" alt="Anna steht ritualvoll zwischen zwei mächtigen Baumstämmen, Sonnenlicht bricht durch die Kronen">
+          <img src="assets/hero-ritual-480.jpg" srcset="assets/hero-ritual-480.jpg 480w, assets/hero-ritual-900.jpg 900w" sizes="(min-width:760px) 33vw, 50vw" width="480" height="640" loading="lazy" alt="Anna steht ritualvoll zwischen zwei mächtigen Baumstämmen, Sonnenlicht bricht durch die Kronen">
         </picture>
       </figure>
       <figure>
         <picture>
           <source type="image/webp" srcset="assets/raeuchern-seite-480.webp 480w, assets/raeuchern-seite-900.webp 900w" sizes="(min-width:760px) 33vw, 50vw">
-          <img src="assets/raeuchern-seite-480.jpg" srcset="assets/raeuchern-seite-480.jpg 480w, assets/raeuchern-seite-900.jpg 900w" sizes="(min-width:760px) 33vw, 50vw" loading="lazy" alt="Anna im Gegenlicht, sie hält eine Räucherschale, der Rauch tanzt in den Sonnenstrahlen">
+          <img src="assets/raeuchern-seite-480.jpg" srcset="assets/raeuchern-seite-480.jpg 480w, assets/raeuchern-seite-900.jpg 900w" sizes="(min-width:760px) 33vw, 50vw" width="480" height="640" loading="lazy" alt="Anna im Gegenlicht, sie hält eine Räucherschale, der Rauch tanzt in den Sonnenstrahlen">
         </picture>
       </figure>
       <figure>
         <picture>
           <source type="image/webp" srcset="assets/raeuchern-sonne-480.webp 480w, assets/raeuchern-sonne-900.webp 900w" sizes="(min-width:760px) 33vw, 50vw">
-          <img src="assets/raeuchern-sonne-480.jpg" srcset="assets/raeuchern-sonne-480.jpg 480w, assets/raeuchern-sonne-900.jpg 900w" sizes="(min-width:760px) 33vw, 50vw" loading="lazy" alt="Anna reicht die Hand ins Sonnenlicht, Rauch steigt zwischen den hohen Fichten auf">
+          <img src="assets/raeuchern-sonne-480.jpg" srcset="assets/raeuchern-sonne-480.jpg 480w, assets/raeuchern-sonne-900.jpg 900w" sizes="(min-width:760px) 33vw, 50vw" width="480" height="640" loading="lazy" alt="Anna reicht die Hand ins Sonnenlicht, Rauch steigt zwischen den hohen Fichten auf">
         </picture>
       </figure>
     </div>
@@ -506,24 +528,24 @@ footer a:hover{opacity:1;color:var(--gold)}
   <div class="wrap reveal">
     <div class="section-head">
       <p class="eyebrow">So läuft es ab</p>
-      <h2>In drei ruhigen Schritten zu deiner Session</h2>
+      <h2>In drei ruhigen Schritten zu deinem Transformationsraum</h2>
       <p class="lede">Kein Druck, kein Verkaufsgespräch — nur ein achtsamer Weg, der sich für dich stimmig anfühlen darf.</p>
     </div>
     <div class="steps">
       <div class="step">
         <span class="step-num">1</span>
-        <h3>Du meldest dich</h3>
-        <p>Schreib mir in ein paar Sätzen, was dich gerade bewegt. Ich lese jede Nachricht selbst und melde mich persönlich zurück.</p>
+        <h3>Du trägst dich ein</h3>
+        <p>Schreib mir in ein paar Sätzen, was dich gerade bewegt. Magst du, hinterlässt du gleich deine Geburtsdaten — dann bereite ich dein Chart schon vor.</p>
       </div>
       <div class="step">
         <span class="step-num">2</span>
-        <h3>Wir lernen uns kennen</h3>
-        <p>In einem kurzen, kostenlosen Gespräch spüren wir gemeinsam, ob es passt — und welches Werkzeug für dein Thema das richtige ist.</p>
+        <h3>Euer Erstgespräch</h3>
+        <p>In einem kostenlosen, unverbindlichen Gespräch spüren wir gemeinsam, ob es passt. Bin ich schon mit deinem Chart vorbereitet, gehen wir von der ersten Minute an in die Tiefe.</p>
       </div>
       <div class="step">
         <span class="step-num">3</span>
-        <h3>Deine Impuls-Session</h3>
-        <p>Wir nehmen uns Zeit für dein Anliegen. Du gehst mit einem klaren, tragenden Impuls für deinen nächsten Schritt.</p>
+        <h3>Dein Transformationsraum</h3>
+        <p>Wir gestalten ein Ritual, ganz auf deinen Prozess angepasst. Du gehst mit einem klaren, tragenden Impuls für deinen nächsten Schritt.</p>
       </div>
     </div>
   </div>
@@ -534,15 +556,15 @@ footer a:hover{opacity:1;color:var(--gold)}
     <div class="section-head">
       <p class="eyebrow">Angebote</p>
       <h2>Wie wir zusammenarbeiten können</h2>
-      <p class="lede">Jede Begleitung ist individuell — wir schauen gemeinsam, was dein Thema gerade braucht.</p>
+      <p class="lede">Ich öffne Transformationsräume — individuell auf dich und deine Signatur angepasst. Damit du dir und deiner eigenen Kraft begegnen kannst.</p>
     </div>
     <div class="offer-grid">
       <div class="offer-card feature">
         <span class="offer-icon">☾</span>
-        <h3>Impuls-Session</h3>
-        <p>Eine individuelle Session ganz auf dein Thema. Mit Astrologie, medialer Arbeit oder Tarot schauen wir gemeinsam hin — und du gehst mit einem klaren, tragenden Impuls für deinen nächsten Schritt.</p>
-        <p class="offer-price">Termine nach Absprache · online &amp; in der Natur</p>
-        <a href="#kontakt" class="btn btn-primary" style="width:fit-content">Session anfragen <span class="arw">→</span></a>
+        <h3>Dein Transformationsraum</h3>
+        <p>Ein individueller Raum, ganz auf dich und deinen Prozess angepasst. Gemeinsam gestalten wir ein Ritual — getragen von Astrologie, Tarot und Ritualarbeit — in dem du dir und deiner eigenen Kraft begegnest und Veränderung sich verankern darf.</p>
+        <p class="offer-price">Termine nach Absprache · aktuell online</p>
+        <a href="#kontakt" class="btn btn-primary" style="width:fit-content">Erstgespräch anfragen <span class="arw">→</span></a>
       </div>
       <div class="offer-card soft">
         <span class="pill">In Vorbereitung</span>
@@ -603,24 +625,54 @@ footer a:hover{opacity:1;color:var(--gold)}
   <div class="wrap contact-grid reveal">
     <div>
       <p class="eyebrow">Kontakt</p>
-      <h2>Lass uns ins Gespräch kommen</h2>
-      <p class="lede">Schreib mir in ein paar Sätzen, worum es bei dir gerade geht — ich melde mich persönlich bei dir zurück. Kein Druck, kein Verkaufsgespräch.</p>
+      <h2>Lass uns dein Erstgespräch vereinbaren</h2>
+      <p class="lede">Trag dich hier für ein kostenloses, unverbindliches Erstgespräch ein. Wir spüren gemeinsam, ob es passt — kein Druck, kein Verkaufsgespräch. Ich melde mich persönlich bei dir zurück.</p>
+      <p class="contact-aside">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A8 8 0 0 1 12 2z" fill="currentColor"/></svg>
+        <span>Deine Angaben behandle ich vertraulich und nutze sie nur, um mich auf dich vorzubereiten. Diese Seite setzt keine Cookies und kein Tracking.</span>
+      </p>
     </div>
-    <form onsubmit="event.preventDefault(); this.querySelector('.demo-note').style.display='block'">
+    <form class="form-card" onsubmit="event.preventDefault(); var n=this.querySelector('.demo-note'); n.style.display='block'; n.scrollIntoView({block:'nearest',behavior:'smooth'});">
       <div class="field">
-        <label for="name">Name</label>
+        <label for="name">Wie heißt du?</label>
         <input id="name" name="name" type="text" placeholder="Dein Name" autocomplete="name" required>
       </div>
       <div class="field">
         <label for="email">E-Mail</label>
         <input id="email" name="email" type="email" placeholder="deine@email.de" autocomplete="email" required>
       </div>
-      <div class="field">
-        <label for="nachricht">Nachricht</label>
-        <textarea id="nachricht" name="nachricht" placeholder="Worum geht es bei dir gerade?"></textarea>
+
+      <div class="birth-panel" role="group" aria-labelledby="birthLabel">
+        <div class="birth-head">
+          <span class="bh-title">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.4" stroke="currentColor" stroke-width="1.3"/><path d="M12 3.2v2.1M12 18.7v2.1M3.2 12h2.1M18.7 12h2.1M6 6l1.5 1.5M16.5 16.5 18 18M18 6l-1.5 1.5M7.5 16.5 6 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M14.5 4.6a5 5 0 1 0 4.9 6.4A4 4 0 0 1 14.5 4.6z" fill="currentColor" opacity=".55"/></svg>
+            <b id="birthLabel">Deine kosmischen Koordinaten</b>
+          </span>
+          <span class="opt">optional</span>
+        </div>
+        <p class="birth-hint">Wenn du magst, verrätst du mir hier deine Geburtsdaten. Dann bereite ich dein Chart schon vor unserem Erstgespräch vor — und wir gehen von der ersten Minute an in die Tiefe. Ganz ohne geht es natürlich auch.</p>
+        <div class="birth-grid">
+          <div class="field">
+            <label for="gdatum">Geburtsdatum</label>
+            <input id="gdatum" name="geburtsdatum" type="date" autocomplete="bday">
+          </div>
+          <div class="field">
+            <label for="gzeit">Geburtszeit <span class="hint">falls bekannt</span></label>
+            <input id="gzeit" name="geburtszeit" type="time">
+          </div>
+          <div class="field full">
+            <label for="gort">Geburtsort</label>
+            <input id="gort" name="geburtsort" type="text" placeholder="Stadt, Land">
+          </div>
+        </div>
       </div>
-      <button type="submit" class="btn btn-primary">Nachricht senden <span class="arw">→</span></button>
-      <p class="demo-note" style="display:none">Das ist ein Vorschau-Formular — in der Live-Version wird deine Nachricht direkt an Anna gesendet.</p>
+
+      <div class="field">
+        <label for="nachricht">Worum geht es bei dir gerade? <span class="hint">optional</span></label>
+        <textarea id="nachricht" name="nachricht" placeholder="Erzähl mir in ein paar Sätzen, was dich bewegt …"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Erstgespräch anfragen <span class="arw">→</span></button>
+      <p class="demo-note" style="display:none">Das ist ein Vorschau-Formular — in der Live-Version kommt deine Anfrage direkt bei Anna an.</p>
     </form>
   </div>
 </section>
@@ -629,7 +681,7 @@ footer a:hover{opacity:1;color:var(--gold)}
   <div class="wrap">
     <div class="footer-grid">
       <a href="#top" class="brand" style="color:var(--paper-light);font-size:1.2rem">
-        <svg width="34" height="34" viewBox="0 0 200 200" fill="none" style="color:#c9ac74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="100" cy="100" r="87" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.85"/><line x1="100.0" y1="60.0" x2="100.0" y2="38.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="112.4" y1="62.0" x2="119.2" y2="41.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="123.5" y1="67.6" x2="136.4" y2="49.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="132.4" y1="76.5" x2="150.2" y2="63.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="138.0" y1="87.6" x2="159.0" y2="80.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="140.0" y1="100.0" x2="162.0" y2="100.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="138.0" y1="112.4" x2="159.0" y2="119.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="132.4" y1="123.5" x2="150.2" y2="136.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="123.5" y1="132.4" x2="136.4" y2="150.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="112.4" y1="138.0" x2="119.2" y2="159.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="100.0" y1="140.0" x2="100.0" y2="162.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="87.6" y1="138.0" x2="80.8" y2="159.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="76.5" y1="132.4" x2="63.6" y2="150.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="67.6" y1="123.5" x2="49.8" y2="136.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="62.0" y1="112.4" x2="41.0" y2="119.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="60.0" y1="100.0" x2="38.0" y2="100.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="62.0" y1="87.6" x2="41.0" y2="80.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="67.6" y1="76.5" x2="49.8" y2="63.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="76.5" y1="67.6" x2="63.6" y2="49.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="87.6" y1="62.0" x2="80.8" y2="41.0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><g transform="rotate(-18 100 100)"><mask id="emFoot"><rect width="200" height="200" fill="black"/><circle cx="100" cy="100" r="33" fill="white"/><circle cx="112" cy="96" r="29" fill="black"/></mask><circle cx="100" cy="100" r="33" fill="currentColor" mask="url(#emFoot)"/></g><polygon points="100.0,13.0 99.0,10.0 96.0,9.0 99.0,8.0 100.0,5.0 101.0,8.0 104.0,9.0 101.0,10.0" fill="currentColor"/><polygon points="9.0,104.0 8.0,101.0 5.0,100.0 8.0,99.0 9.0,96.0 10.0,99.0 13.0,100.0 10.0,101.0" fill="currentColor"/><polygon points="191.0,104.0 190.0,101.0 187.0,100.0 190.0,99.0 191.0,96.0 192.0,99.0 195.0,100.0 192.0,101.0" fill="currentColor"/></svg>
+        <img class="footer-mark" src="assets/logo-anna-gold.png" width="42" height="42" alt="">
         Anna Sonntag
       </a>
       <ul class="footer-links">
@@ -646,14 +698,14 @@ footer a:hover{opacity:1;color:var(--gold)}
 (function(){
   var burger = document.getElementById('burgerBtn');
   var links = document.getElementById('navLinks');
+  function closeMenu(){ links.classList.remove('open'); burger.setAttribute('aria-expanded','false'); burger.setAttribute('aria-label','Menü öffnen'); }
   burger.addEventListener('click', function(){
     var open = links.classList.toggle('open');
     burger.setAttribute('aria-expanded', open);
     burger.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
   });
-  links.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){ links.classList.remove('open'); burger.setAttribute('aria-expanded','false'); burger.setAttribute('aria-label','Menü öffnen'); });
-  });
+  // Menü schließen bei Klick auf JEDEN Nav-Link — inkl. Marke & CTA, sonst bleibt das Overlay hängen
+  document.querySelectorAll('.nav a').forEach(function(a){ a.addEventListener('click', closeMenu); });
 
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function(entries){
